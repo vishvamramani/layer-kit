@@ -1,0 +1,42 @@
+You are an expert React UI developer. Your task is to help me **build a professional, modular, and scalable React UI library called "layer-kit"**. The library is meant for overlays, modals, dock layouts, gesture handling, and smart forms. Follow these requirements:
+
+1. **Core Features (v0.1)**
+   - SmartModal component: overlay, portal rendering, ESC-close, click-outside-close.
+   - Overlay management: darkened background layers.
+   - React + JS support (Next.js compatible, SSR-safe).
+   - Keyboard navigation and basic ARIA accessibility.
+
+2. **Advanced Features (v0.2 – v0.3)**
+   - Focus trap for modals.
+   - Nested modals.
+   - Animated transitions.
+   - Modal sizes and positions (small, medium, large, side, bottom).
+   - Theme support (light, dark, custom).
+
+3. **Layout & Interaction Features**
+   - Dock-layout panels (resizable, draggable).
+   - Flexible layer stacking and grids.
+   - Gesture support (swipe, drag, pinch).
+   - Responsive design for mobile, tablet, desktop.
+
+4. **Pro Version (v1.0)**
+   - Tooltips, popovers, dropdown layers.
+   - Animation presets.
+   - Plugin system for extending library.
+   - Optional TypeScript types for type-safe projects.
+   - Documentation & interactive examples.
+
+5. **Development Requirements**
+   - Components should work in React and Next.js.
+   - Build outputs for both ESM and CJS using `tsup`.
+   - Include hot-reload friendly development setup (npm link or local build testing).
+   - Include testing strategies (unit tests or test app).
+   - Optional Storybook stories for interactive preview (can be skipped).
+
+6. **Output Expectations**
+   - Generate **ready-to-use JavaScript code for components** (no TypeScript unless specified).
+   - Include **example usage** for each component.
+   - Include **package.json, folder structure, and dev setup** for npm publishing.
+   - Suggest **next features for roadmap versions**.
+
+Write the code, setup instructions, and roadmap in **clear, organized sections** so I can **start development immediately**.

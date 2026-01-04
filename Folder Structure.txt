@@ -1,0 +1,137 @@
+layer-kit/
+├─ package.json
+├─ tsconfig.json
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ .npmignore
+├─ src/
+│  ├─ index.ts                        # Entry point exports all components/hooks
+│  ├─ types/
+│  │  ├─ gesture.ts                    # Drag, Pan, Swipe types
+│  │  ├─ modal.ts                      # Modal props
+│  │  ├─ panel.ts                      # Panel / Dock types
+│  │  └─ form.ts                       # SmartForm types
+│  ├─ hooks/
+│  │  ├─ useDrag.ts                     # Core drag hook
+│  │  ├─ useGesture.ts                  # General gesture hook
+│  │  ├─ usePanel.ts                    # Panel open/close, dock logic
+│  │  ├─ useModal.ts                    # Modal state management
+│  │  └─ useForm.ts                     # Smart form handling
+│  ├─ components/
+│  │  ├─ Gesture/
+│  │  │  ├─ index.ts
+│  │  │  └─ Drag.tsx
+│  │  ├─ Panel/
+│  │  │  ├─ index.ts
+│  │  │  └─ Panel.tsx
+│  │  ├─ Modal/
+│  │  │  ├─ index.ts
+│  │  │  └─ Modal.tsx
+│  │  ├─ Overlay/
+│  │  │  ├─ index.ts
+│  │  │  └─ Overlay.tsx
+│  │  ├─ Form/
+│  │  │  ├─ index.ts
+│  │  │  └─ SmartForm.tsx
+│  │  ├─ Dock/
+│  │  │  ├─ index.ts
+│  │  │  └─ Dock.tsx
+│  │  ├─ Tooltip/
+│  │  │  └─ Tooltip.tsx
+│  │  └─ ...                          # Future UI components (Slider, Tabs, etc.)
+│  ├─ utils/
+│  │  ├─ clamp.ts
+│  │  ├─ rubberBand.ts
+│  │  ├─ dom.ts
+│  │  ├─ animation.ts
+│  │  └─ constants.ts
+│  └─ constants/
+│     └─ default.ts
+├─ stories/
+│  ├─ Drag.stories.tsx
+│  ├─ Modal.stories.tsx
+│  ├─ Panel.stories.tsx
+│  ├─ Overlay.stories.tsx
+│  └─ Form.stories.tsx
+├─ examples/
+│  └─ nextjs-app/
+│     └─ pages/index.tsx
+├─ tests/
+│  ├─ useDrag.test.ts
+│  ├─ Drag.test.tsx
+│  ├─ Modal.test.tsx
+│  └─ Panel.test.tsx
+└─ dist/
+
+
+
+
+
+
+
+
+layer-kit/
+├─ package.json
+├─ tsconfig.json
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ src/
+│  ├─ index.ts                     # Single entry point for all exports
+│  ├─ types/
+│  │  ├─ gesture.ts                 # DragState, UseDragOptions, Gesture types
+│  │  ├─ panel.ts                   # Panel / Dock types
+│  │  ├─ modal.ts                   # Modal props / state
+│  │  └─ form.ts                    # SmartForm types
+│  ├─ hooks/
+│  │  ├─ useDrag.ts                 # Core Drag hook
+│  │  ├─ useGesture.ts              # Generic gesture hook
+│  │  ├─ usePanel.ts                # Panel open/close, docking logic
+│  │  ├─ useModal.ts                # Modal state logic
+│  │  └─ useForm.ts                 # SmartForm handling
+│  ├─ components/
+│  │  ├─ Gesture/
+│  │  │  ├─ index.ts                # export { Drag, Gesture } from './Drag'
+│  │  │  └─ Drag.tsx                # Drag component using useDrag
+│  │  ├─ Panel/
+│  │  │  ├─ index.ts                # export { Panel } from './Panel'
+│  │  │  └─ Panel.tsx
+│  │  ├─ Modal/
+│  │  │  ├─ index.ts                # export { Modal } from './Modal'
+│  │  │  └─ Modal.tsx
+│  │  ├─ Overlay/
+│  │  │  ├─ index.ts
+│  │  │  └─ Overlay.tsx
+│  │  ├─ Dock/
+│  │  │  ├─ index.ts
+│  │  │  └─ Dock.tsx
+│  │  ├─ Form/
+│  │  │  ├─ index.ts
+│  │  │  └─ SmartForm.tsx
+│  │  └─ Tooltip/
+│  │     ├─ index.ts
+│  │     └─ Tooltip.tsx
+│  ├─ utils/
+│  │  ├─ clamp.ts
+│  │  ├─ rubberBand.ts
+│  │  ├─ dom.ts
+│  │  ├─ velocity.ts
+│  │  └─ animation.ts
+│  └─ constants/
+│     └─ default.ts
+├─ stories/
+│  ├─ Drag.stories.tsx
+│  ├─ Panel.stories.tsx
+│  ├─ Modal.stories.tsx
+│  ├─ Overlay.stories.tsx
+│  └─ SmartForm.stories.tsx
+├─ tests/
+│  ├─ useDrag.test.ts
+│  ├─ Drag.test.tsx
+│  ├─ Modal.test.tsx
+│  └─ Panel.test.tsx
+├─ examples/
+│  └─ nextjs-app/
+│     └─ pages/index.tsx
+└─ dist/
