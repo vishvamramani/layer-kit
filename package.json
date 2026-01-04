@@ -1,0 +1,38 @@
+{
+  "name": "layer-kit",
+  "version": "0.1.0",
+  "description": "A modern UI overlay and layout toolkit for React",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ui",
+    "overlay",
+    "modal",
+    "react",
+    "layer",
+    "component-library"
+  ],
+  "author": "VishvamRamani",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.js --format cjs,esm",
+    "dev": "tsup src/index.js --watch",
+    "prepublishOnly": "npm run build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "storybook": "^10.1.11",
+    "tsup": "^8.5.1",
+    "vite": "^7.3.0"
+  }
+}
